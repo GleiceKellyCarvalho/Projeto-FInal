@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Marrom:#70360cbe;
+    --Dourado:#c4982b;
+    --Off-White:#FAF9F6;
+    --logo:"Bodoni Moda", serif;
+    --nav:"Raleway", sans-serif;
+    --corpo: "Roboto", sans-serif;
+    --frase:"Dancing Script", cursive;
+}
+
+header{
+    background-color: var(--Off-White);
+}
+
+.header-content>h1{
+    color: var(--Marrom);
+    font-family: var(--logo);
+    font-size: 50px;
+    letter-spacing: 4px;
+    text-shadow: 4px 2px 11px #00000028;
+}
+
+.header-content{
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-itens{
+    display: flex;
+    list-style: none;
+    padding:0;
+    gap: 30px;
+}
+
+.nav-itens>li{
+    position: relative;
+}
+
+.nav-itens>li>a{
+    padding-left: 30px;
+    text-decoration: none;
+    color:var(--Marrom);
+    font-family:var(--nav);
+    font-size: 19px; 
+    padding: 5px 0;
+    transition:color 0.3s ease;
+
+}
+
+.nav-itens a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    background-color:var(--Dourado);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-itens a:hover::after {
+    width: 100%;
+}
+
+.nav-itens a:hover {
+    color: var(--Dourado);
+}
+
+.container-slide{
+    padding: 20px;
+    width: 100vw;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+.paginas-slide{
+    display: inline-block;
+    animation: anima 20s linear infinite;
+}
+
+.paginas-slide img{
+    width:300px; 
+}
+
+ @keyframes anima {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+body{
+    background-color: var(--Off-White);
+}
+
+.section-artigo{
+    border:solid red 2px;
+   width: 1310px;
+   height: 537px;
+   margin-top: 76px;
+   margin-left: 20px;
+}
+
+#cafeteria{
+   margin: 20px;
+   width: 1266px;
+   height: 500px;
+
+}
+
+.sub-titulo{
+   font-family: var(--logo);
+   margin: 10px;
+   padding: 20px;
+   font-size: 30px;
+   color:var(--Marrom);
+}
+
+.texto{
+    font-family:var(--corpo);
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 2px;
+    color:var(--Marrom);
+}
+
+#cafeteria>.texto{
+    margin-top: 70px;
+}
+
+.frase{
+    border: blue solid 2px;
+    width: 1310px;
+    margin-left: 20px;
+    font-family: var(--frase);
+    font-size: 50px;
+    letter-spacing: 4px;
+    text-align: center;
+    color: var(--Dourado); 
+}
+
+.cardapio{
+    border: solid black 2px;
+    width: 1310px;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+#comidas>p{
+    text-align: center;
+    color:var(--Off-White) ;
+}
+
+
+
+
+
+
