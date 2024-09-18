@@ -16,6 +16,9 @@
 header{
     background-color: var(--Off-White);
     height: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 .header-content>h1{
@@ -76,8 +79,9 @@ header{
 }
 
 .container-slide{
-    padding: 20px;
-    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
     white-space: nowrap;
     overflow:hidden;
 }
@@ -128,9 +132,10 @@ body{
 }
 
 .texto{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
     font-family:var(--corpo);
-    margin: 10px;
-    padding: 20px;
     font-size: 20px;
     text-align: justify;
     letter-spacing: 2px;
@@ -201,6 +206,7 @@ body{
 
 .img{
     margin-top: 30px;
+    margin-right: 125px;
     display: flex;
     justify-content: center;
     
@@ -216,17 +222,18 @@ body{
 
 #footer {
     background-color:var(--Off-White);
-    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
     margin-top: 40px;
     text-align: center;
     border-top: 1px solid rgba(0, 0, 0, 0.253);
 }
 
 .main-index{
-    width: 1334px;
-    height: 1700px;
-    margin-left: 20px;
-    margin-right: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
   
 .social-icons a {
@@ -240,6 +247,7 @@ body{
     color:var(--Dourado);
 }
   
+
 .criadora {
     margin-top: 20px;
     font-size: 15px;
