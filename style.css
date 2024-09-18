@@ -15,6 +15,7 @@
 
 header{
     background-color: var(--Off-White);
+    height: 200px;
 }
 
 .header-content>h1{
@@ -26,7 +27,8 @@ header{
 }
 
 .header-content{
-    padding: 25px;
+    padding: 30px;
+    padding-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -100,11 +102,10 @@ header{
 }
 
 body{
-    background-color: var(--Off-White);
+    background-color:var(--Off-White);
 }
 
 .section-artigo{
-    border:solid red 2px;
    width: 1310px;
    height: 537px;
    margin-top: 76px;
@@ -141,9 +142,9 @@ body{
 }
 
 .frase{
-    border: blue solid 2px;
     width: 1310px;
     margin-left: 20px;
+    margin-bottom: 200px;
     font-family: var(--frase);
     font-size: 50px;
     letter-spacing: 4px;
@@ -152,7 +153,7 @@ body{
 }
 
 .cardapio{
-    border: solid black 2px;
+    margin:300px;
     width: 1310px;
     margin-left: 20px;
     margin-top: 100px;
@@ -160,11 +161,207 @@ body{
 
 #comidas>p{
     text-align: center;
-    color:var(--Off-White) ;
 }
 
+.bnt{
+    width:100px;
+    height:33px;
+    background-color: var(--Dourado);
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+.bnt>a{
+    color:var(--Off-White);
+    font-family: var(--corpo);
+    font-size: 18px;
+    text-decoration: none;
+}
 
+.bnt:hover{
+    background-color: var(--Marrom);
+}
 
+.O-Chef{
+   width: 1310px;
+   height: 537px;
+   margin-left: 20px;
+}
 
+.sub{
+    padding-left: 40px;
+}
+
+#Chef>p{
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.img{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.imagem-circular {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+  
+
+#footer {
+    background-color:var(--Off-White);
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.253);
+}
+
+.main-index{
+    width: 1334px;
+    height: 1700px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  
+.social-icons a {
+    color: var(--Marrom);
+    margin: 0 10px; 
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+  
+.social-icons a:hover {
+    color:var(--Dourado);
+}
+  
+.criadora {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #555;
+}
+
+.main-cardapio{
+    text-align: center;
+}
+
+.menu-cardapios {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+  
+#cardapios {
+    padding: 20px;
+    background-color:var(--Off-White);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.explore {
+    text-align: center;
+    font-size: 1.5rem;
+    color:var(--Marrom);
+    margin-bottom: 40px;
+}
+  
+article {
+    margin-bottom: 40px;
+}
+  
+.sub-titulo {
+    font-size: 2rem;
+    color: var(--Dourado);
+    border-bottom: 2px solid #70360C; 
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+  
+article p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+  
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+  
+ul li {
+    background-color:--Off-White;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+.Eventos {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color:var(--Off-White);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+section p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+  
+article {
+    margin-bottom: 40px;
+}
+  
+article p {
+    font-size: 1.1rem;
+    color: #555;
+}
+  
+
+.informacoes {
+    text-align: center;
+    margin-top: 30px;
+    margin: 50px;
+}
+  
+.informacoes button {
+    background-color: #70360C;
+    color: #FAF9F6;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.informacoes button:hover {
+    background-color:var(--Dourado);
+}
+  
+.informacoes a {
+    color:var(--Off-White);
+    text-decoration: none;
+}
+
+.informacoes>p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+.main-eventos{
+
+    text-align: center;
+}
 
