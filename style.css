@@ -361,7 +361,90 @@ article p {
 }
 
 .main-eventos{
-
     text-align: center;
 }
+
+.main-reservas{
+    padding: 20px;
+    background-color:var(--Off-White);
+    font-family:var(--corpo);
+}
+  
+.formulario {
+    max-width: 600px; 
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.formulario h2 {
+    font-size: 24px;
+    color:var(--Marrom);
+    margin-bottom: 10px;
+}
+  
+.formulario p {
+    font-size: 16px;
+    color:var(--Marrom);
+    margin-bottom: 20px;
+}
+  
+
+.formulario form div {
+    margin-bottom: 15px;
+}
+  
+.formulario label {
+    font-size: 14px;
+    color: var(--Marrom);
+    display: block;
+    margin-bottom: 5px;
+}
+  
+  .formulario input[type="text"],
+  .formulario input[type="email"],
+  .formulario input[type="tel"],
+  .formulario input[type="date"],
+  .formulario input[type="time"],
+  .formulario input[type="number"],
+  .formulario select,
+  .formulario textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .formulario input[type="text"]:focus,
+  .formulario input[type="email"]:focus,
+  .formulario input[type="tel"]:focus,
+  .formulario input[type="date"]:focus,
+  .formulario input[type="time"]:focus,
+  .formulario input[type="number"]:focus,
+  .formulario select:focus,
+  .formulario textarea:focus {
+    border-color:var(--Marrom);
+    outline: none;
+}
+  
+.formulario button[type="submit"] {
+    background-color: var(--Marrom);
+    color:var(--Off-White);
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+  
+.formulario button[type="submit"]:hover {
+    background-color:var(--Dourado);
+  }
 
