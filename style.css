@@ -13,69 +13,50 @@
     --frase:"Dancing Script", cursive;
 }
 
-header{
-    background-color: var(--Off-White);
-    height: 200px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-.header-content>h1{
-    color: var(--Marrom);
-    font-family: var(--logo);
-    font-size: 50px;
-    letter-spacing: 4px;
-    text-shadow: 4px 2px 11px #00000028;
-}
-
-.header-content{
-    padding: 30px;
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.nav-itens{
-    display: flex;
-    list-style: none;
-    padding:0;
-    gap: 30px;
-}
-
-.nav-itens>li{
-    position: relative;
-}
-
-.nav-itens>li>a{
-    padding-left: 30px;
-    text-decoration: none;
+body {
+    font-family: var(--corpo);
+    background-color: var(--off-white);
     color:var(--Marrom);
-    font-family:var(--nav);
-    font-size: 19px; 
-    padding: 5px 0;
-    transition:color 0.3s ease;
-
+    margin: 0;
 }
 
-.nav-itens a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px; 
-    background-color:var(--Dourado);
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s ease-in-out;
+
+header {
+    background-color: var(--off-white);
+    padding: 20px;
+    text-align: center;
 }
 
-.nav-itens a:hover::after {
-    width: 100%;
+.header-content h1 {
+    font-family: var(--logo);
+    color:var(--Dourado);
+    font-size: 60px;
 }
 
-.nav-itens a:hover {
-    color: var(--Dourado);
+.nav-itens {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.nav-itens li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav-itens li a {
+    text-decoration: none;
+    font-family: var(--nav);
+    color:var(--Marrom);
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.nav-itens li a:hover {
+    color:var(--Dourado);
+}
+
+body{
+    background-color: var(--off-white);
 }
 
 .container-slide{
@@ -105,154 +86,122 @@ header{
     }
 }
 
-body{
-    background-color:var(--Off-White);
+.main-index {
+    padding: 20px;
 }
 
 .section-artigo{
-   width: 1310px;
-   height: 537px;
-   margin-top: 76px;
-   margin-left: 20px;
+    margin-top: 50px;
 }
 
 #cafeteria{
-   margin: 20px;
-   width: 1266px;
-   height: 500px;
-
-}
-
-.sub-titulo{
-   font-family: var(--logo);
-   margin: 10px;
-   padding: 20px;
-   font-size: 30px;
-   color:var(--Marrom);
-}
-
-.texto{
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    font-family:var(--corpo);
-    font-size: 20px;
-    text-align: justify;
-    letter-spacing: 2px;
-    color:var(--Marrom);
-}
-
-#cafeteria>.texto{
-    margin-top: 70px;
-}
-
-.frase{
-    width: 1310px;
-    margin-left: 20px;
-    margin-bottom: 200px;
-    font-family: var(--frase);
-    font-size: 50px;
-    letter-spacing: 4px;
-    text-align: center;
-    color: var(--Dourado); 
-}
-
-.cardapio{
-    margin:300px;
-    width: 1310px;
-    margin-left: 20px;
-    margin-top: 100px;
-}
-
-#comidas>p{
-    text-align: center;
-}
-
-.bnt{
-    width:100px;
-    height:33px;
-    background-color: var(--Dourado);
-    border: 0px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.bnt>a{
-    color:var(--Off-White);
-    font-family: var(--corpo);
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.bnt:hover{
-    background-color: var(--Marrom);
-}
-
-.O-Chef{
-   width: 1310px;
-   height: 537px;
-   margin-left: 20px;
-}
-
-.sub{
-    padding-left: 40px;
-}
-
-#Chef>p{
-    text-align: justify;
-    padding-left: 20px;
-}
-
-.img{
-    margin-top: 30px;
-    margin-right: 125px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+}
+
+#sub-titulo {
+    font-family: var(--logo);
+    color: var(--Marrom);
+    font-size:30px;
+    margin-bottom: 30px;
+    text-align: center;
     
 }
 
-.imagem-circular {
-    width: 250px; 
-    height: 250px; 
-    border-radius: 50%; 
-    object-fit: cover; 
+.texto {
+    font-family: var(--corpo);
+    color: var(--marrom);
+    font-size:20px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
 }
-  
 
-#footer {
-    background-color:var(--Off-White);
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    margin-top: 40px;
+.frase {
+    font-family: var(--frase);
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 50px;
+    color:var(--Dourado);
+    margin:300px
+}
+
+.cardapio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 300px;
+}
+
+#O-Chef {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#O-Chef .sub-titulo {
+    color: var(--dourado);
+}
+
+#O-Chef .imagem-circular {
+    border-radius: 50%;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.bnt {
+    background-color:var(--Dourado);
+    color:var(--Off-White);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--nav);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bnt a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.bnt:hover {
+    background-color:var(--Marrom);
+}
+
+footer {
+    background-color: var(--off-white);
+    border-top: solid 1px #b1aeae94;
+    color: var(--off-white);
+    padding: 20px;
     text-align: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.253);
 }
 
-.main-index{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-  
 .social-icons a {
-    color: var(--Marrom);
-    margin: 0 10px; 
-    font-size: 25px;
-    transition: color 0.3s ease;
+    margin: 0 10px;
+    color:var(--marrom);
+    font-size:30px;
+    transition: color 0.3s;
 }
-  
+
 .social-icons a:hover {
     color:var(--Dourado);
 }
-  
 
 .criadora {
-    margin-top: 20px;
-    font-size: 15px;
-    color: #555;
+    color: var(--marrom);
+    font-family: var(--nav);
+    margin-top: 10px;
 }
+
+
 
 .main-cardapio{
     text-align: center;
